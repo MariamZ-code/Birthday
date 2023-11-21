@@ -1,0 +1,88 @@
+*{padding: 0; margin: 0; box-sizing: border-box; 
+    font-family: 'Dancing Script', cursive;
+    /* font-family: "Balsamiq Sans", Sans-serif */
+ }
+.card{
+   background-color: #fff!important;
+   border: none !important;
+}
+#myLayOut{
+   
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#countDown {
+    /* border: #12265A 5px solid; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #FEB9CC ;
+
+
+}
+#overLay{
+   display: none;
+   
+}
+#overLay img{
+    width: 70%;
+    /* height: 100px; */
+} 
+h2{
+    text-align: center;
+    color: #12265A;
+        font-size: 85px;
+    font-weight: 600;
+
+}
+.myName{
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 1.6em;
+    color: #FEB9CC;
+}
+.countTime{
+    text-align: center;
+}
+p{
+    font-size: 60px;
+    color: #FEB9CC;
+
+    margin-bottom: -10px;
+}
+.countTime span{
+    color: #12265A;
+
+}
+
+.party{
+    position: absolute;
+    /* top:0%; */
+    right: 12%;
+    animation: party 3s linear infinite alternate ;
+}
+
+@keyframes party{
+    0%, 7% {
+        transform: rotateZ(0);
+      }
+      15% {
+        transform: rotateZ(-15deg);
+      }
+      20% {
+        transform: rotateZ(10deg);
+      }
+      25% {
+        transform: rotateZ(-10deg);
+      }
+      30% {
+        transform: rotateZ(6deg);
+      }
+      35% {
+        transform: rotateZ(-4deg);
+      }
+      40%, 100% {
+        transform: rotateZ(0);
+      }
+}
